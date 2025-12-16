@@ -1,81 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tirupati Thusharika — Software Engineer</title>
+  <title>Tirupati Thusharika — Portfolio</title>
 
   <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="hero">
-    <div class="container">
+    <div class="container hero-row">
       <div class="hero-left">
-        <p class="eyebrow">Hi, my name is</p>
-        <h1 class="name">Tirupati Thusharika</h1>
-        <p class="role">Software Engineer</p>
-        <p class="tagline">Building practical ML & computer-vision systems — currently focused on assistive navigation for visually impaired users.</p>
-        <div class="ctas">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn ghost" href="mailto:tthusharika20@gmail.com">Contact</a>
+        <h1 class="name">TIRUPATI THUSHARIKA</h1>
+        <p class="role">B.Tech (IT) • Python & AI • Software Engineer</p>
+        <p class="contact">
+          <span class="contact-item">📞 +91‑7995904559</span>
+          <span class="contact-item">✉️ <a href="mailto:tthusharika20@gmail.com">tthusharika20@gmail.com</a></span>
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+          <a href="resume.pdf" class="btn outline" download>Download Resume</a>
         </div>
       </div>
 
-      <aside class="hero-right" aria-hidden="true">
-        <div class="card small">Automated Attendance</div>
-        <div class="card medium">QR-Based Smart Navigation</div>
-        <div class="card small muted">AI-Augmented Smart Nav — In Progress</div>
-      </aside>
+      <div class="hero-right">
+        <div class="meta-card">
+          <h4>Objective</h4>
+          <p>A proactive B.Tech in IT student with a proven ability to apply Python and AI skills. Successfully developed projects like a face-recognition attendance system and a QR‑based navigation tool, and eager to contribute to impactful tech solutions in a dynamic environment.</p>
+        </div>
+
+        <div class="quick-links">
+          <a class="link" href="#projects">Projects</a>
+          <a class="link" href="#experience">Experience</a>
+          <a class="link" href="#skills">Skills</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container main-content">
-    <section id="about" class="panel">
-      <h2>About Me</h2>
-      <p>I am a motivated final-year B.Tech (IT) student with a strong foundation in computer science and practical experience building applications in Python and Java. I enjoy solving real-world problems using machine learning, computer vision, and backend web development.</p>
-      <p>Key strengths: problem-solving, quick learning, collaboration, and clear communication. Comfortable with Flask, MySQL, Git, Linux, TensorFlow, and OpenCV.</p>
-      <p>I am actively seeking internships and software engineering roles where I can contribute to impactful projects, expand my technical skills, and collaborate on open-source and team efforts.</p>
-      <p><strong>Contact:</strong> <a href="mailto:tthusharika20@gmail.com">tthusharika20@gmail.com</a></p>
-    </section>
+  <main class="container main-grid">
+    <section id="experience" class="panel">
+      <h2>Experience</h2>
 
-    <section id="skills" class="panel">
-      <h2>Technical Skills</h2>
-      <ul class="skills">
-        <li>Python · Java · C</li>
-        <li>Flask · Git · Linux</li>
-        <li>MySQL · NumPy · Pandas</li>
-        <li>OpenCV · TensorFlow</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="panel">
-      <h2>Key Projects</h2>
-
-      <article class="project">
-        <h3>Automated Attendance System</h3>
-        <p>Real-time facial recognition attendance system using OpenCV and Flask with MySQL-backed logging and a lightweight admin UI.</p>
+      <article class="role-block">
+        <h3>Python Development Intern — SkillVertex</h3>
+        <p class="meta">Jun 2024 — Aug 2024</p>
+        <ul>
+          <li>Developed Python-based backend logic for various applications.</li>
+          <li>Automated data processing tasks, reducing manual effort by 30%.</li>
+          <li>Collaborated with a 4-member team using Git for version control.</li>
+        </ul>
       </article>
 
-      <article class="project">
-        <h3>QR-Based Smart Navigation System</h3>
-        <p>Mobile-friendly system using QR codes for location-aware navigation and contextual routing, backend in Flask + MySQL.</p>
+      <article class="role-block">
+        <h3>Intern — OTBI, Osmania University</h3>
+        <p class="meta">Mar 2024 — May 2024</p>
+        <ul>
+          <li>Contributed to “Smart Navigation using QR Code” project.</li>
+          <li>Designed and implemented QR-code-based navigation logic and prototype for real-time location guidance.</li>
+        </ul>
       </article>
 
-      <article class="project">
-        <h3>AI-Augmented Smart Navigation for Visually Impaired <span class="tag in-progress">In Progress</span></h3>
-        <p>Assistive navigation combining object detection, voice guidance and semantic understanding. Tech: TensorFlow/PyTorch, OpenCV, on-device inference.</p>
+      <article class="role-block">
+        <h3>AI Intern — InternPe</h3>
+        <p class="meta">Jan 2024 — Mar 2024</p>
+        <ul>
+          <li>Trained image-classification models using TensorFlow.</li>
+          <li>Assisted with data annotation and preprocessing for deep learning pipelines.</li>
+        </ul>
+      </article>
+
+      <article class="role-block">
+        <h3>Cybersecurity Virtual Experience — Deloitte (Forage)</h3>
+        <p class="meta">Jun 2025</p>
+        <ul>
+          <li>Completed Deloitte’s cybersecurity simulation; practiced incident response, risk analysis, and threat modeling.</li>
+        </ul>
       </article>
     </section>
+
+    <aside class="panel right-panel">
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+          <h3>Automated Attendance System</h3>
+          <p>Built with Flask and OpenCV for real-time face recognition; includes registration, login, attendance logging and reports.</p>
+          <p class="project-meta">Tech: Python, Flask, OpenCV, MySQL</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Smart Navigation using QR Code</h3>
+          <p>QR-based indoor navigation prototype providing mobile-friendly guidance and direction mapping.</p>
+          <p class="project-meta">Tech: Python, QR detection, Flask</p>
+        </div>
+
+        <div class="project-card in-progress">
+          <h3>AI‑Augmented Smart Navigation for Visually Impaired</h3>
+          <p>In progress — combining object detection, voice guidance and semantic scene understanding.</p>
+          <p class="project-meta">Planned: TensorFlow/PyTorch, OpenCV, on-device inference</p>
+        </div>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Infosys Springboard — AI (Jun 8, 2025)</li>
+          <li>Deloitte Cybersecurity Forage (Jun 16, 2025)</li>
+          <li>Google Gen AI Intensive Course (5-day)</li>
+          <li>Swecha Summer Internship on AI — Cultural Preservation</li>
+          <li>Participant — National Level Hackathon (HackVortex)</li>
+        </ul>
+      </section>
+    </aside>
+
+    <section id="education" class="panel">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>Stanley College of Engineering & Technology for Women, Hyderabad</h3>
+        <p>B.Tech in Information Technology — CGPA: 8.0 — Expected Graduation: May 2026</p>
+      </div>
+
+      <div class="edu">
+        <h3>Little Flowers Junior College, Hyderabad</h3>
+        <p>Higher Secondary — Percentage: 85% (2022)</p>
+      </div>
+
+      <div class="edu">
+        <h3>Dilsukhnagar High School, Hyderabad</h3>
+        <p>Secondary Education — CGPA: 10.0/10 (2020)</p>
+      </div>
+    </section>
+
+    <aside class="panel right-panel small">
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skill-list">
+          <li>Languages: Python, Java, C, HTML/CSS</li>
+          <li>AI/ML: TensorFlow, OpenCV, Scikit-learn</li>
+          <li>Web: Flask</li>
+          <li>Data: NumPy, Pandas, MySQL</li>
+          <li>Tools: Git, VS Code, Linux</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact-card">
+        <h2>Contact</h2>
+        <p class="muted">Phone: +91‑7995904559</p>
+        <p class="muted">Email: <a href="mailto:tthusharika20@gmail.com">tthusharika20@gmail.com</a></p>
+        <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/thusharika-tirupati-a4519a2bb">/in/thusharika-tirupati-a4519a2bb</a></p>
+        <p class="muted">GitHub: <a href="https://github.com/TirupatiThusharika">TirupatiThusharika</a></p>
+      </section>
+    </aside>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Tirupati Thusharika</p>
-      <p class="links">Connect: <a href="https://www.linkedin.com/in/thusharika-tirupati-a4519a2bb">LinkedIn</a> · <a href="https://github.com/TirupatiThusharika">GitHub</a></p>
+      <p class="links"><a href="https://github.com/TirupatiThusharika">GitHub</a> · <a href="https://www.linkedin.com/in/thusharika-tirupati-a4519a2bb">LinkedIn</a></p>
     </div>
   </footer>
 </body>
 </html>
+
