@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tirupati Thusharika | Software Engineer</title>
-    <link rel="stylesheet" href="style.css"> </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tirupati Thusharika — Software Engineer</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header id="hero">
-        <h1>TIRUPATI THUSHARIKA</h1>
-        <h2>B.Tech (IT) Final Year | Python & Java Programmer | Aspiring Software Engineer</h2>
-        <a href="#projects">View Projects</a> | <a href="mailto:tthusharika20@gmail.com">Contact Me</a>
-    </header>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-left">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1 class="name">Tirupati Thusharika</h1>
+        <p class="role">Software Engineer</p>
+        <p class="tagline">Building practical ML & computer-vision systems — currently focused on assistive navigation for visually impaired users.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="mailto:tthusharika20@gmail.com">Contact</a>
+        </div>
+      </div>
 
-    <section id="about">
-        <h3>About Me</h3>
-        <p>A motivated final-year B.Tech in IT student with a strong foundation in core computer science principles... (Paste the full About Me text here)</p>
-        <p><strong>Contact:</strong> tthusharika20@gmail.com</p>
+      <aside class="hero-right" aria-hidden="true">
+        <div class="card small">Automated Attendance</div>
+        <div class="card medium">QR-Based Smart Navigation</div>
+        <div class="card small muted">AI-Augmented Smart Nav — In Progress</div>
+      </aside>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section id="about" class="panel">
+      <h2>About Me</h2>
+      <p>I am a motivated final-year B.Tech (IT) student with a strong foundation in computer science and practical experience building applications in Python and Java. I enjoy solving real-world problems using machine learning, computer vision, and backend web development.</p>
+      <p>Key strengths: problem-solving, quick learning, collaboration, and clear communication. Comfortable with Flask, MySQL, Git, Linux, TensorFlow, and OpenCV.</p>
+      <p>I am actively seeking internships and software engineering roles where I can contribute to impactful projects, expand my technical skills, and collaborate on open-source and team efforts.</p>
+      <p><strong>Contact:</strong> <a href="mailto:tthusharika20@gmail.com">tthusharika20@gmail.com</a></p>
     </section>
 
-    <section id="skills">
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>**Languages:** Python, Java, C, HTML, CSS</li>
-            <li>**Frameworks/Tools:** Flask, Git, VS Code, Linux</li>
-            <li>**Data/DB:** MySQL, NumPy, Pandas</li>
-            <li>**Specialized:** OpenCV, TensorFlow</li>
-        </ul>
+    <section id="skills" class="panel">
+      <h2>Technical Skills</h2>
+      <ul class="skills">
+        <li>Python · Java · C</li>
+        <li>Flask · Git · Linux</li>
+        <li>MySQL · NumPy · Pandas</li>
+        <li>OpenCV · TensorFlow</li>
+      </ul>
     </section>
 
-    <section id="projects">
-        <h3>Key Projects</h3>
-        <div class="project-item">
-            <h4>Automated Attendance System</h4>
-            <p>Designed and implemented a real-time facial recognition system using <strong>OpenCV</strong> and **Flask** to automate staff/student attendance... (Add details here)</p>
-            </div>
-        </section>
+    <section id="projects" class="panel">
+      <h2>Key Projects</h2>
 
-    <footer>
-        <p>&copy; 2026 Tirupati Thusharika</p>
-        <p>Connect: <a href="[Your LinkedIn URL]">LinkedIn</a> | <a href="[Your GitHub URL]">GitHub</a></p>
-    </footer>
+      <article class="project">
+        <h3>Automated Attendance System</h3>
+        <p>Real-time facial recognition attendance system using OpenCV and Flask with MySQL-backed logging and a lightweight admin UI.</p>
+      </article>
+
+      <article class="project">
+        <h3>QR-Based Smart Navigation System</h3>
+        <p>Mobile-friendly system using QR codes for location-aware navigation and contextual routing, backend in Flask + MySQL.</p>
+      </article>
+
+      <article class="project">
+        <h3>AI-Augmented Smart Navigation for Visually Impaired <span class="tag in-progress">In Progress</span></h3>
+        <p>Assistive navigation combining object detection, voice guidance and semantic understanding. Tech: TensorFlow/PyTorch, OpenCV, on-device inference.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Tirupati Thusharika</p>
+      <p class="links">Connect: <a href="https://www.linkedin.com/in/thusharika-tirupati-a4519a2bb">LinkedIn</a> · <a href="https://github.com/TirupatiThusharika">GitHub</a></p>
+    </div>
+  </footer>
 </body>
 </html>
